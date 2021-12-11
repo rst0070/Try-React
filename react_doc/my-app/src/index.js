@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Tick from './doc05_tick.js';
 
 function Welcome(props){
   return <h1>Welcome, {props.name}</h1>;
@@ -16,6 +17,7 @@ const element = (
   <div>
     <Hi name="wonbin" />
     <Welcome name="wonbin"/>
+    <Tick incr={1}/>
   </div>
 );
 ReactDOM.render(
