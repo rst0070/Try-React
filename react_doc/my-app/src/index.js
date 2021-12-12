@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Tick from './doc05_tick.js';
+import ChangeColor from './doc06_ChangeColor.js';
+import ConditionOnTime from './doc07_ConditionOnTime.js';
 
 function Welcome(props){
   return <h1>Welcome, {props.name}</h1>;
@@ -18,6 +20,8 @@ const element = (
     <Hi name="wonbin" />
     <Welcome name="wonbin"/>
     <Tick incr={1}/>
+    <ChangeColor color={"red"}/>
+    <ConditionOnTime />
   </div>
 );
 ReactDOM.render(
